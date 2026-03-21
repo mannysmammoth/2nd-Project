@@ -505,6 +505,26 @@ input:focus-within {
     width: 50%;
 }
 
+.ThreePlans__HeaderContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ThreePlan__Heading{
+    margin-top: 1rem;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+    font-size: 3rem;
+}
+
+.ThreePlan__Description{
+    margin-top: 1rem;
+    max-width: 36rem
+}
 
 
 
