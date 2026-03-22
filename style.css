@@ -511,6 +511,7 @@ input:focus-within {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2.5rem;
 }
 
 .ThreePlan__Heading{
@@ -523,9 +524,132 @@ input:focus-within {
 
 .ThreePlan__Description{
     margin-top: 1rem;
-    max-width: 36rem
+    max-width: 36rem;
+    text-align: center;
 }
 
+.ThreePlans__PlansContainer{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+}
 
+.ThreePlans__StyledDiv{
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    position: absolute;
+    height: 0.5rem;
+    border-top-right-radius: 0.05rem;
+    border-top-right-radius: 0.05rem;
 
+}
+
+.ThreePlans__Plan{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    box-sizing: border-box;
+    border-color: rgb(226, 232, 240);
+    color: rgb(26, 32, 44);
+    width: 100%;
+    max-width: 24rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding-top: 0.5rem;
+    box-shadow: 6px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.ThreePlans__Plan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px; 
+  background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  z-index: 2;
+}
+
+.ThreePlans__PlanHeader {
+  padding-top: 1.5rem; 
+}
+
+.ThreePlans__PlanHeader{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 1.625;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.price{
+    font-size: 3rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+
+.duration{
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: rgb(160, 174, 192);
+}
+
+.ThreePlans__PlanFeatures{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    box-sizing: border-box;
+    border-color: rgb(226, 232, 240);
+    padding: 2rem;
+    margin-left: -2.2rem;
+    margin-right: -2.2rem;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.mainFeature{
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: black;
+}
+
+.feature{
+    margin-top: 1.25rem;
+    font-weight: 500;
+    color: rgb(113, 128, 150);
+}
+
+.ThreePlans__PlanAction{
+    padding: 2rem 1rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.ThreePlans__Button{
+    background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    border: none;
+    width: 100%;
+    border-radius: 9999px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    color: rgb(247, 250, 252);
+}
 
