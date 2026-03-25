@@ -973,6 +973,11 @@ blockquote{
     width: auto;
 }
 
+.GetStarted__Link__Primary:hover{
+    background-color: rgb(246, 61, 61);
+    transition: 400ms ease-in-out;
+}
+
 .GetStarted__Link__Secondary{
    color: white;
     border: solid;
@@ -984,4 +989,77 @@ blockquote{
     text-decoration: none;
     font-size: 1rem; 
     width: auto;
+}
+
+.GetStarted__Link__Secondary:hover{
+    background-color: white;
+    color: rgb(100, 21, 255);
+    transition: 400ms ease-in-out;
+}
+
+.FiveColumnWithBackground__Container{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: rgb(100, 21, 255); 
+    margin-bottom: -2rem;
+    padding: 5rem 2rem;
+    margin-right: -2rem;
+    margin-left: -2rem;
+    margin-bottom: -2rem;
+}
+
+.FiveColumnWithBackground__Content{
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(247, 250, 252);
+    max-width: 1200px;
+}
+
+.FiveColumnWithBackground__FiveColumns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.FiveColumnWithBackground__Column{
+    margin-top: 3rem;
+}
+
+.FiveColumnWithBackground__ColumnHeader{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(247, 250, 252);
+    font-size: 1rem;
+}
+
+.FiveColumnWithBackground__LinkList{
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.FiveColumnWithBackground__LinkListItem{
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    list-style: none;
+    text-align: left;
+}
+
+#footer{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 80px 0;
+}
+
+.FiveColumnWithBackground__Link{
+    color: rgb(247, 250, 252);
+    padding-bottom: 0.25rem;
+    text-decoration: none;
+    border-bottom-width: 2px;  
+}
+
+.FiveColumnWithBackground__Link:hover{
+    
 }
