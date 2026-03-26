@@ -8,26 +8,52 @@
     border-width: 0px;
 }
 
+body{
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.light__header{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
 img {
     width: 100%;
-    display: block;
+    display: block; 
 }
 
 .light__nav {
     display: flex;
-    justify-content: space-between;
+}
+
+.light__NavLink{
+    display: flex;
     align-items: center;
-    padding: 24px 0px;
+    font-size: 1.5rem !important;
+    font-weight: 900;
+    margin-left: 0px !important;
 }
 
 .img__logo {
-    max-width: 2vw;
+    margin-right: 0.75rem;
+    width: 2.5rem;
     display: block;
 }
 
@@ -37,11 +63,11 @@ img {
 
 .nav__title {
     font-size: 25px;
-    margin-right: 480px;
 }
 
 .modal {
-    display: flex; 
+    display: inline-block;
+    justify-content: flex-end; 
 }
 
 .modal__list {
@@ -61,6 +87,12 @@ img {
     color: white;
     padding: 10px 32px;
     background-color: rgb(100,21,255)
+}
+
+.btn__modal{
+    background-color: rgb(69, 14, 179);
+    transition: 300ms ease-in-out;
+    cursor: pointer;
 }
 
 .TwoColumnWithInput__Container {
@@ -349,6 +381,11 @@ input:focus-within {
     text-decoration: none;
 }
 
+.TwoColWithButton__PrimaryButton:hover{
+    background-color: rgb(78, 16, 203);
+    transition: 300ms ease-in-out;
+}
+
 .TwoColWithSteps__ImageContent{
     width: 55%;
 }
@@ -501,6 +538,11 @@ input:focus-within {
     display: inline-block;
     margin-top: 2rem;
     text-decoration: none;
+}
+
+.TwoColWithTwoHorizontalFeaturesAndButton__PrimaryButton:hover{
+    background-color: rgb(78, 16, 203);
+    transition: 300ms ease-in-out;
 }
 
 .TwoColWithTwoHorizontalFeaturesAndButton__ColumnImage{
@@ -1054,12 +1096,69 @@ blockquote{
 }
 
 .FiveColumnWithBackground__Link{
-    color: rgb(247, 250, 252);
-    padding-bottom: 0.25rem;
+    color: white;
     text-decoration: none;
-    border-bottom-width: 2px;  
+    border-bottom-width: 2px;
+    border-bottom:solid;
+    border-color: transparent; 
 }
 
 .FiveColumnWithBackground__Link:hover{
-    
+    border-color: white;
+    transition: 300ms ease-in-out;
+}
+
+.FiveColumnWithBackground__Divider{
+    width: 100%;
+    margin-top: 4rem;
+    border-bottom-width: 2px;
+    border-color: rgb(116, 44, 255);
+    border: solid;
+    border-width: 1px;
+    opacity: 0.4;
+}
+
+.FiveColumnWithBackground__ThreeColRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.FiveColumnWithBackground__LogoContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FiveColumnWithBackground__LogoImg{
+    width: 2rem;
+    height: auto;   
+}
+
+.FiveColumnWithBackground__LogoText{
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: rgb(247, 250, 252);
+}
+
+.FiveColumnWithBackground__CopywrightNotice{
+    text-align: center;
+}
+
+.FiveColumnWithbackground__SocialLink{
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 9999px;
+    background-color: rgb(247, 250, 252);
+    padding: 0.5rem;
+    color: rgb(26, 32, 44);
+}
+
+.FiveColumnWithbackground__SocialLink:hover{
+    background-color: rgb(219, 222, 223);
+    transition: 300ms ease-in-out;
 }
