@@ -1195,10 +1195,12 @@ blockquote{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    ;
 }
 
 .FiveColumnWithBackground__Column{
     margin-top: 3rem;
+    width: 20%;
 }
 
 .FiveColumnWithBackground__ColumnHeader{
@@ -1364,6 +1366,23 @@ blockquote{
         flex-direction: column;
     }
 
+    .TwoColWithfeaturesAndButton__Feature{
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    .TwoColWithTwoHorizontalFeaturesAndButton__FeatureHeadingContainer{
+        margin: 0;
+    }
+
+    .TwoColWithTwoHorizontalFeaturesAndButton__FeatureIconContainerOne{
+        margin: 0;
+    }
+
+    .TwoColWithTwoHorizontalFeaturesAndButton__FeatureIconContainerTwo{
+        margin: 0;
+    }
+
     .TwoColWithfeaturesAndButton__Description{
         font-size: 1rem;
     }
@@ -1416,10 +1435,27 @@ blockquote{
         width: 28rem;
     }
 
+    .TwoColWithButton__TextColumn{
+        margin-right: 0;
+        margin-left: 0;
+        width: 80%;
+    }
+
     .TwoColWithButton__TextContent{
         text-align: center;
-        margin-right: -4rem;
         margin-top: 4rem;
+    }
+
+    .TwoColWithButton__Description{
+        text-align: center;
+    }
+
+    .TwoColWithSteps__ImageContent{
+        width: 80%;
+    }
+
+    .TwoColWithSteps__TextColumn{
+        width: 100%;
     }
 
     .TwoColWithButton__Header{
@@ -1461,6 +1497,7 @@ blockquote{
     .TwoColWithHorizontalfeaturesAndButton__Text{
         text-align: center;
         margin: 0 auto;
+        width: 80%;
     }
 
     .TwoColWithfeaturesAndButton__Description{
@@ -1510,10 +1547,39 @@ blockquote{
         margin-top: 1.5rem;
     }
 
+    .GetStarted__Text{
+        padding: 0;
+    }
+
     .GetStarted__ColumnContainerLinks{
         flex: 1;
     }
 
     .ThreePlan__Heading{
         font-size: 2.25rem;
+    }
+
+    .FiveColumnWithBackground__FiveColumns{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .FiveColumnWithBackground__Column{
+        margin: 0;
+        margin-top: 3rem;
+        width: 33.3333%;
+    }
+
+    .FiveColumnWithBackground__ThreeColRow{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FiveColumnWithBackground__CopywrightNotice{
+        margin-top: 2rem;
+    }
+
+    .FiveColumnWithBackground__SocialLinksContainer{
+        margin-top: 2rem;
     }
