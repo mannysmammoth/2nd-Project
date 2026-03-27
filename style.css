@@ -42,6 +42,7 @@ img {
 
 .light__nav {
     display: flex;
+    margin: 0;
 }
 
 .light__NavLink{
@@ -147,6 +148,7 @@ img {
 .modal {
     display: inline-block;
     justify-content: flex-end; 
+    margin: 0;
 }
 
 .modal__list {
