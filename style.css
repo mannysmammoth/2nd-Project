@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 * {
-    margin: 0; 
+    margin: 0 auto; 
     padding: 0; 
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -66,14 +66,16 @@ img {
     font-size: 25px;
 }
 
+/* Small Menu Pop-Up */
+
 .nav__links{
     position: absolute;
     background-color: white;
-    border-color: rgb(152, 152, 152);
+    color: rgb(189, 189, 189);
     top: 2vh;
     left: 2vw;
     right: 2vw;
-    bottom: 40vh;
+    bottom: 54vh;
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -90,13 +92,36 @@ img {
 }
 
 .mod__menu{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 1.25rem;
     font-weight: 600;
     border-bottom: solid;
     border-bottom: transparent;
     border-width: 2px;
+    padding-bottom: 6px;
+}
+
+.mod__menu:hover{
+    border-bottom: solid;
+    transition: 300ms;
+    color: rgb(100, 21, 255);
+}
+
+.mod__btn--smallmenu{
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    background-color: rgb(100, 21, 255)
+
+}
+
+.mod__btn--smallmenu:hover{
+    cursor: pointer;
+    background-color: rgb(69, 14, 179);
+    transition: 300ms ease-in-out;
 }
 
 .btn__menu{
@@ -109,6 +134,14 @@ img {
    top: 0;
    riGHT: 0;
    padding: 8px;  
+}
+
+.btn__menu--svg:hover{
+    cursor: pointer;
+}
+
+.light___StyledCloseIcon-lj69nl-14:hover{
+    cursor: pointer;
 }
 
 .modal {
@@ -131,11 +164,11 @@ img {
     font-size: bold;
     border-radius: 30px;
     color: white;
-    padding: 10px 32px;
-    background-color: rgb(100,21,255)
+    padding: 15px 32px;
+    background-color: rgb(100, 21, 255)
 }
 
-.btn__modal{
+.btn__modal:hover{
     background-color: rgb(69, 14, 179);
     transition: 300ms ease-in-out;
     cursor: pointer;
@@ -693,8 +726,10 @@ input:focus-within {
     padding-top: 0.5rem;
     box-shadow: 6px;
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right:2rem;
     margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     position: relative;
     overflow: hidden;
 }
@@ -902,6 +937,19 @@ input:focus-within {
     color: white
 }
 
+/* Testimonial */
+
+.row__testimonial{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
 .TwoColumnWithImageAndRating__Column{
    flex-direction: row;
    width: 50%;
@@ -1048,30 +1096,31 @@ blockquote{
 
 .GetStarted__Row{
     display: flex;
-    flex-direction: row;
+    flex-direction: wrap;
     text-align: left;
     align-items: center;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 1200px;
 }
 
 .GetStarted__ColumnContainerText{
     width: 50%;
-    max-width: 32rem;
+    
 }
 
 .GetStarted__ColumnContainerLinks{
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 auto;
+    
 }
 
 .GetStarted__Text{
     font-size: 1.875rem;
     font-weight: 700;
     color: rgb(247, 250, 252);
+    padding-left: 2.5rem;
 }
 
 .GetStarted__Link__Primary{
@@ -1087,7 +1136,7 @@ blockquote{
     text-decoration: none;
     font-size: 1rem;
     margin-right: 2rem;
-    margin-left: 2rem;
+    margin-left: rem;
     width: auto;
 }
 
@@ -1349,10 +1398,6 @@ blockquote{
         margin-bottom: 3rem;
     }
 
-    .GetStarted__Link__Secondary{
-        margin-right: 4rem;
-    }
-
 
 }
 
@@ -1433,7 +1478,7 @@ blockquote{
        .TwoColWithTwoHorizontalFeaturesAndButton__FeatureHeadingContainer {
         margin-left: auto;
         margin-right: auto;
-        width: fit-content;  /* or a fixed width */
+        width: fit-content;  
     }
 
     .TwoColWithTwoHorizontalFeaturesAndButton__FeatureIconContainerOne{
@@ -1442,6 +1487,31 @@ blockquote{
 
     .row__plans{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-}
+
+    .row__testimonial{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .TwoColumnWithImageAndRating__Column{
+        width: 28rem;
+    }
+
+    .TwoColumnWithImageAndRating__ColumnTwo{
+        
+        width: 28rem;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin-top: 1.5rem;
+    }
+
+    .GetStarted__ColumnContainerLinks{
+        flex: 1;
+    }
+
+    .ThreePlan__Heading{
+        font-size: 2.25rem;
+    }
