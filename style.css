@@ -10,7 +10,9 @@
 
 body{
     min-height: 100vh;
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
 
 a {
@@ -64,6 +66,51 @@ img {
     font-size: 25px;
 }
 
+.nav__links{
+    position: absolute;
+    background-color: white;
+    border-color: rgb(152, 152, 152);
+    top: 2vh;
+    left: 2vw;
+    right: 2vw;
+    bottom: 40vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: solid;
+    border-width: 1.5px;
+    display: none;
+    z-index: 2;
+}
+
+.menu--open .nav__links{
+    display: flex;
+}
+
+.mod__menu{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-bottom: solid;
+    border-bottom: transparent;
+    border-width: 2px;
+}
+
+.btn__menu{
+    background-color: transparent; 
+    display: none;  
+}
+
+.btn__menu--close{
+   position: absolute;
+   top: 0;
+   riGHT: 0;
+   padding: 8px;  
+}
+
 .modal {
     display: inline-block;
     justify-content: flex-end; 
@@ -99,6 +146,9 @@ img {
     flex-direction: row;
     gap: 40px;
     margin-top: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 6rem;
 }
 
 .TwoColumnWithInput__TwoColumn {
@@ -218,12 +268,6 @@ input:focus-within {
     line-height: inherit;  
 }
 
-#features {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .ThreeColWithSideImage__ThreeColumnContainer {
     display: flex;
     flex-direction: row;
@@ -234,6 +278,14 @@ input:focus-within {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Features */
+
+#features {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .row__narrow {
@@ -334,6 +386,8 @@ input:focus-within {
     justify-content: space-between;
 }
 
+/* Quality Work */
+
 .TwoColWithButton__TextColumn, .TwoColWithButton__ImageColumn{
     width: 50%;
 }
@@ -382,6 +436,17 @@ input:focus-within {
 .TwoColWithButton__PrimaryButton:hover{
     background-color: rgb(78, 16, 203);
     transition: 300ms ease-in-out;
+}
+
+/* Steps */
+
+.row__steps{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .TwoColWithSteps__ImageContent{
@@ -464,7 +529,6 @@ input:focus-within {
 .TwoColWithfeaturesAndButton__Features{
     display: flex;
     flex-direction: row;
-    max-width: none;
 }
 
 .TwoColWithfeaturesAndButton__Feature{
@@ -568,6 +632,7 @@ input:focus-within {
     margin-top: 1rem;
     max-width: 36rem;
     text-align: center;
+    color: rgb(124, 139, 161);
 }
 
 .ThreePlans__PlansContainer{
@@ -575,6 +640,15 @@ input:focus-within {
     align-items: stretch;
     justify-content: space-between;
     position: relative;
+}
+
+.row__plans{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .ThreePlans__StyledDiv{
@@ -950,6 +1024,9 @@ blockquote{
     margin-bottom: 0.75rem;
     margin-top: 0.75rem;
     border-right-width: 1px;
+    border: solid;
+    border-width: 1px;
+    opacity: 0.1;
 }
 
 .start__container{
@@ -960,6 +1037,7 @@ blockquote{
     padding-bottom: 6rem;
     padding-top: 6rem;
     border-radius: 0.5rem;
+
 }
 
 .start__row{
@@ -1009,7 +1087,7 @@ blockquote{
     text-decoration: none;
     font-size: 1rem;
     margin-right: 2rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
     width: auto;
 }
 
@@ -1029,12 +1107,18 @@ blockquote{
     text-decoration: none;
     font-size: 1rem; 
     width: auto;
+
 }
 
 .GetStarted__Link__Secondary:hover{
     background-color: white;
     color: rgb(100, 21, 255);
     transition: 400ms ease-in-out;
+}
+
+#footer{
+   max-width: 100vwpx;
+   margin: 0 auto;
 }
 
 .FiveColumnWithBackground__Container{
@@ -1046,6 +1130,7 @@ blockquote{
     margin-right: -2rem;
     margin-left: -2rem;
     margin-bottom: -2rem;
+    width: 
 }
 
 .FiveColumnWithBackground__Content{
@@ -1059,7 +1144,6 @@ blockquote{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   
 }
 
 .FiveColumnWithBackground__Column{
@@ -1085,12 +1169,6 @@ blockquote{
     font-weight: 500;
     list-style: none;
     text-align: left;
-}
-
-#footer{
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 80px 0;
 }
 
 .FiveColumnWithBackground__Link{
@@ -1167,7 +1245,25 @@ blockquote{
     }
 }
 
+@media (min-width: 1024px) {
+    .nav__links {
+        display: none !important;
+    }
+}
+
 @media (max-width:1024px){
+    .modal{
+        display: none;
+    }
+
+     .btn__menu{
+       position: absolute;
+       right: 0;
+       top: 0;
+       padding: 40px;
+       display: flex; 
+    } 
+    
     .TwoColumnWithInput__Container{
         display: flex;
         flex-direction: column;
@@ -1210,5 +1306,142 @@ blockquote{
 
     .ThreeColWithSideImage__Col{
         width: 100%;
+    }
+
+    .TwoColWithfeaturesAndButton__Features{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .TwoColWithfeaturesAndButton__Description{
+        font-size: 1rem;
+    }
+
+    .TwoColWithfeaturesAndButton__Header{
+        font-size: 2.25rem;
+    }
+
+    .ThreePlans__PlansContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TwoColumnWithImageAndRating__Heading{
+        font-size: 2.25rem;
+    }
+
+    .TwoColumnWithImageAndRating__Description{
+        font-size: 1rem;
+    }
+
+    .GetStarted__Row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .GetStarted__ColumnContainerText{
+        width: 70%;
+    }
+
+    .GetStarted__Text{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .GetStarted__Link__Secondary{
+        margin-right: 4rem;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .TwoColWithButton__ImageColumn{
+        margin-left: auto;
+        margin-right: auto;
+        width: 28rem;
+    }
+
+    .TwoColWithButton__TextContent{
+        text-align: center;
+        margin-right: -4rem;
+        margin-top: 4rem;
+    }
+
+    .TwoColWithButton__Header{
+        font-size: 2.25rem;
+    }
+
+    .TwoColWithButton__Description{
+        margin-top: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .row__steps{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .TwoColWithSteps__TextColumn{
+        margin-top: 4rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .TwoColWithSteps__ImageContent{
+        font-size: 2.25rem;
+    }
+
+    .TwoColWithSteps__Step{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .TwoColWithSteps__StepText{
+        margin: 0 auto;
+        margin-top: 0.75rem;
+    }
+
+    .TwoColWithHorizontalfeaturesAndButton__Text{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .TwoColWithfeaturesAndButton__Description{
+        font-size: 0.875rem;
+    }
+
+    .TwoColWithfeaturesAndButton__Features{
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .TwoColWithfeaturesAndButton__Feature{
+        width: 90%;
+    }
+
+       .TwoColWithTwoHorizontalFeaturesAndButton__FeatureHeadingContainer {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;  /* or a fixed width */
+    }
+
+    .TwoColWithTwoHorizontalFeaturesAndButton__FeatureIconContainerOne{
+        margin-left: 
+    }
+
+    .row__plans{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }

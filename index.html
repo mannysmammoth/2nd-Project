@@ -5,24 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/80f1a599ce.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>Treact</title>
 </head>
 <body>
     <section id="landing">
         <header class="light__header">
           <nav class="light__nav">
+            <div class="nav__row">
+                <div class="nav__Logo">
             <a class="light__NavLink" href="https://timerse.com"><img class="img__logo" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt=""> 
             <h1 class="nav__title">Treact</h1></a>
+                </div>
+                 <div class="nav__links">
+                    <a href="#features" class="modal__item, mod__menu">About</a>
+                    <a href="#" class="modal__item, mod__menu">Blog</a>
+                    <a href="#pricing" class="modal__item, mod__menu">Pricing</a>
+                    <a href="#" class="modal__item, mod__menu">Contact Us</a>
+                    <a href="#" class="modal__item, mod__menu">Login</a>
+                    <a href="#" class="btn__modal">Sign Up</a>
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+                </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
           </nav>
           <div class="modal">
-                <ul class="modal__list">
-                    <a href="#" class="modal__item">About</a>
+                <div class="modal__list">
+                    <a href="#features" class="modal__item">About</a>
                     <a href="#" class="modal__item">Blog</a>
-                    <a href="#" class="modal__item">Pricing</a>
+                    <a href="#pricing" class="modal__item">Pricing</a>
                     <a href="#" class="modal__item">Contact Us</a>
                     <a href="#" class="modal__item">Login</a>
-                </ul>
-                <button class="btn__modal">Sign Up</button>
+                    <a href="#" class="btn__modal">Sign Up</a>
+                </div>
             </div>
         </header>
           <div class="TwoColumnWithInput__Container">
@@ -145,7 +175,7 @@
         </section>
         <section id="steps">
             <div class="container">
-                <div class="row">
+                <div class="row__steps">
                     <div class="TwoColWithSteps__ImageContent">
                         <img class="StepsImage" src="assets/hero-screenshot-2.241aac1fbc66db29d873.png">
                     </div>
